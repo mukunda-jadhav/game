@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Draw & Guess Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <div class="canvas-area">
+      <div class="toolbar">
+        <button id="new-word-btn">Get Secret Word</button>
+        <span id="word-display">Click button to draw</span>
+        <button id="clear-btn">Clear Canvas</button>
+      </div>
+      <canvas id="paint-canvas" width="600" height="450"></canvas>
+    </div>
+
+    <div class="chat-area">
+      <h3>Chat & Guesses</h3>
+      <div id="chat-box"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type your guess here..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

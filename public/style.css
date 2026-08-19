@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  display: flex;
+  gap: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.canvas-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+canvas {
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: crosshair;
+  background-color: #fff;
+}
+
+.chat-area {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-box {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  overflow-y: auto;
+  height: 380px;
+  background-color: #fafafa;
+}
+
+.message {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.system {
+  color: #2b7a0b;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  margin-top: 10px;
+  gap: 6px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
